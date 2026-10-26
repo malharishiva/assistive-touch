@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Collapsed Floating Bubble View -->
+    <FrameLayout
+        android:id="@+id/layoutCollapsed"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_floating_bubble"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🔘"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <!-- Expanded Popup Controls -->
+    <LinearLayout
+        android:id="@+id/layoutExpanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_expanded_panel"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:elevation="12dp">
+
+        <!-- Top Row: Vol Up & Vol Down -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnFloatingVolUp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_button"
+                android:text="🔊"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnFloatingVolDown"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_button"
+                android:text="🔉"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Bottom Row: Lock Screen & Power Menu -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnFloatingLock"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_button"
+                android:text="🔒"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnFloatingPower"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_button"
+                android:text="⚡"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Close / Collapse Button -->
+        <TextView
+            android:id="@+id/btnFloatingClose"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="✕ Close"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

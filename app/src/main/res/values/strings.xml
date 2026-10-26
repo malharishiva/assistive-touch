@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assistive Button</string>
+    <string name="device_admin_label">Screen Lock Administrator</string>
+    <string name="device_admin_description">Allows Assistive Button to lock the screen when the hardware power button is broken.</string>
+    <string name="accessibility_service_label">Assistive Power &amp; Volume Service</string>
+    <string name="accessibility_service_description">Used exclusively to show the Power Off/Restart menu dialog when your physical power button is broken.</string>
+</resources>
